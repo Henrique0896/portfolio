@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-screen flex flex-col justify-center px-6 md:px-16 max-w-5xl mx-auto"
+      className="relative min-h-screen flex flex-col justify-center px-6 md:px-16 max-w-5xl mx-auto"
     >
       <p className="font-mono text-sm text-[var(--color-accent)] mb-4 tracking-widest uppercase">
         Software Development Engineer

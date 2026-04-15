@@ -1,3 +1,5 @@
+import FadeIn from "./FadeIn";
+
 const projects = [
   {
     title: "Async Multi-Branch Provisioning Pipeline",
@@ -25,19 +27,21 @@ export default function Projects() {
       id="projects"
       className="min-h-screen flex flex-col justify-center px-6 md:px-16 max-w-5xl mx-auto py-24"
     >
-      <p className="font-mono text-sm text-[var(--color-accent)] mb-4 tracking-widest uppercase">
-        Projects
-      </p>
+      <FadeIn>
+        <p className="font-mono text-sm text-[var(--color-accent)] mb-4 tracking-widest uppercase">
+          Projects
+        </p>
 
-      <h2 className="text-3xl md:text-4xl font-bold text-[var(--color-foreground)] mb-12">
-        Things I&apos;ve built
-      </h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-[var(--color-foreground)] mb-12">
+          Things I&apos;ve built
+        </h2>
+      </FadeIn>
 
       <div className="grid md:grid-cols-2 gap-6">
-        {projects.map((project) => (
+        {projects.map((project, index) => (
+          <FadeIn key={project.title} delay={index * 100}>
           <div
-            key={project.title}
-            className="border border-[var(--color-border)] rounded-xl p-6 flex flex-col gap-4 hover:border-[var(--color-accent)]/40 transition-colors"
+            className="border border-[var(--color-border)] rounded-xl p-6 flex flex-col gap-4 hover:border-[var(--color-accent)]/40 transition-colors h-full"
           >
             <div>
               <p className="font-mono text-xs text-[var(--color-muted)] uppercase tracking-widest mb-2">
@@ -69,6 +73,7 @@ export default function Projects() {
               ))}
             </div>
           </div>
+          </FadeIn>
         ))}
       </div>
     </section>

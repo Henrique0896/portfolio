@@ -1,3 +1,5 @@
+import FadeIn from "./FadeIn";
+
 const stack = [
   "C#",
   "ASP.NET Core",
@@ -15,16 +17,18 @@ export default function About() {
       id="about"
       className="min-h-screen flex flex-col justify-center px-6 md:px-16 max-w-5xl mx-auto py-24"
     >
-      <p className="font-mono text-sm text-[var(--color-accent)] mb-4 tracking-widest uppercase">
-        About
-      </p>
+      <FadeIn>
+        <p className="font-mono text-sm text-[var(--color-accent)] mb-4 tracking-widest uppercase">
+          About
+        </p>
 
-      <h2 className="text-3xl md:text-4xl font-bold text-[var(--color-foreground)] mb-12">
-        A bit about me
-      </h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-[var(--color-foreground)] mb-12">
+          A bit about me
+        </h2>
+      </FadeIn>
 
       <div className="grid md:grid-cols-2 gap-12 mb-16">
-        <div className="flex flex-col gap-6 text-[var(--color-muted)] leading-relaxed">
+        <FadeIn delay={100} className="flex flex-col gap-6 text-[var(--color-muted)] leading-relaxed">
           <p>
             I&apos;m a software engineer from Belo Horizonte, Brazil, with a
             genuine passion for building systems that scale. I started coding
@@ -45,9 +49,9 @@ export default function About() {
             clean APIs, and the occasional side project that teaches me
             something new.
           </p>
-        </div>
+        </FadeIn>
 
-        <div className="flex flex-col gap-6">
+        <FadeIn delay={200} className="flex flex-col gap-6">
           <p className="font-mono text-sm text-[var(--color-muted)] uppercase tracking-widest">
             Stack
           </p>
@@ -61,7 +65,7 @@ export default function About() {
               </span>
             ))}
           </div>
-        </div>
+        </FadeIn>
       </div>
     </section>
   );

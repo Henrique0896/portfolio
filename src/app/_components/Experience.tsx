@@ -1,3 +1,5 @@
+import FadeIn from "./FadeIn";
+
 const experiences = [
   {
     company: "Stefanini Brasil",
@@ -72,18 +74,20 @@ export default function Experience() {
       id="experience"
       className="min-h-screen flex flex-col justify-center px-6 md:px-16 max-w-5xl mx-auto py-24"
     >
-      <p className="font-mono text-sm text-[var(--color-accent)] mb-4 tracking-widest uppercase">
-        Experience
-      </p>
+      <FadeIn>
+        <p className="font-mono text-sm text-[var(--color-accent)] mb-4 tracking-widest uppercase">
+          Experience
+        </p>
 
-      <h2 className="text-3xl md:text-4xl font-bold text-[var(--color-foreground)] mb-12">
-        Where I&apos;ve worked
-      </h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-[var(--color-foreground)] mb-12">
+          Where I&apos;ve worked
+        </h2>
+      </FadeIn>
 
       <div className="flex flex-col gap-4">
-        {experiences.map((exp) => (
+        {experiences.map((exp, index) => (
+          <FadeIn key={exp.company + exp.period} delay={index * 60}>
           <div
-            key={exp.company + exp.period}
             className="border border-[var(--color-border)] rounded-xl p-6 hover:border-[var(--color-accent)]/40 transition-colors"
           >
             <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-4">
@@ -120,6 +124,7 @@ export default function Experience() {
               ))}
             </ul>
           </div>
+          </FadeIn>
         ))}
       </div>
     </section>

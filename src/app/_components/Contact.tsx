@@ -1,3 +1,5 @@
+import FadeIn from "./FadeIn";
+
 const links = [
   {
     label: "Email",
@@ -22,24 +24,26 @@ export default function Contact() {
       id="contact"
       className="flex flex-col justify-center px-6 md:px-16 max-w-5xl mx-auto py-24"
     >
-      <p className="font-mono text-sm text-[var(--color-accent)] mb-4 tracking-widest uppercase">
-        Contact
-      </p>
+      <FadeIn>
+        <p className="font-mono text-sm text-[var(--color-accent)] mb-4 tracking-widest uppercase">
+          Contact
+        </p>
 
-      <h2 className="text-3xl md:text-4xl font-bold text-[var(--color-foreground)] mb-6">
-        Let&apos;s talk
-      </h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-[var(--color-foreground)] mb-6">
+          Let&apos;s talk
+        </h2>
 
-      <p className="text-lg text-[var(--color-muted)] max-w-xl mb-12 leading-relaxed">
-        I&apos;m open to new opportunities, technical conversations, or just a
-        good chat about software. Feel free to reach out through any of the
-        channels below.
-      </p>
+        <p className="text-lg text-[var(--color-muted)] max-w-xl mb-12 leading-relaxed">
+          I&apos;m open to new opportunities, technical conversations, or just a
+          good chat about software. Feel free to reach out through any of the
+          channels below.
+        </p>
+      </FadeIn>
 
       <div className="flex flex-col gap-4">
-        {links.map((link) => (
+        {links.map((link, index) => (
+          <FadeIn key={link.label} delay={index * 80}>
           <a
-            key={link.label}
             href={link.href}
             target={link.href.startsWith("mailto") ? undefined : "_blank"}
             rel={link.href.startsWith("mailto") ? undefined : "noopener noreferrer"}
@@ -57,6 +61,7 @@ export default function Contact() {
               ↗
             </span>
           </a>
+          </FadeIn>
         ))}
       </div>
 

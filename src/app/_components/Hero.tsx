@@ -1,3 +1,5 @@
+import VideoModal from "./VideoModal";
+
 export default function Hero() {
   return (
     <section
@@ -44,6 +46,7 @@ export default function Hero() {
         >
           Email →
         </a>
+        <VideoModal />
       </div>
 
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 text-[var(--color-muted)] animate-bounce">

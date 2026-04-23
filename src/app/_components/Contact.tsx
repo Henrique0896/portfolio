@@ -5,16 +5,25 @@ const links = [
     label: "Email",
     value: "barrosohenriquelima@gmail.com",
     href: "mailto:barrosohenriquelima@gmail.com",
+    download: false,
   },
   {
     label: "LinkedIn",
     value: "linkedin.com/in/limahb",
     href: "https://linkedin.com/in/limahb",
+    download: false,
   },
   {
     label: "GitHub",
     value: "github.com/Henrique0896",
     href: "https://github.com/Henrique0896",
+    download: false,
+  },
+  {
+    label: "Curriculum",
+    value: "CV_Henrique.pdf",
+    href: "/CV_Henrique.pdf",
+    download: true,
   },
 ];
 
@@ -45,8 +54,9 @@ export default function Contact() {
           <FadeIn key={link.label} delay={index * 80}>
           <a
             href={link.href}
-            target={link.href.startsWith("mailto") ? undefined : "_blank"}
-            rel={link.href.startsWith("mailto") ? undefined : "noopener noreferrer"}
+            download={link.download ? true : undefined}
+            target={!link.download && !link.href.startsWith("mailto") ? "_blank" : undefined}
+            rel={!link.download && !link.href.startsWith("mailto") ? "noopener noreferrer" : undefined}
             className="flex items-center justify-between border border-[var(--color-border)] rounded-xl px-6 py-4 hover:border-[var(--color-accent)]/40 transition-colors group max-w-lg"
           >
             <div className="flex flex-col gap-0.5">
@@ -58,7 +68,7 @@ export default function Contact() {
               </span>
             </div>
             <span className="text-[var(--color-muted)] group-hover:text-[var(--color-accent)] transition-colors">
-              ↗
+              {link.download ? "↓" : "↗"}
             </span>
           </a>
           </FadeIn>

@@ -46,6 +46,13 @@ export default function Hero() {
         >
           Email →
         </a>
+        <a
+          href="/CV_Henrique.pdf"
+          download
+          className="px-6 py-3 text-[var(--color-muted)] font-medium hover:text-[var(--color-foreground)] transition-colors"
+        >
+          CV ↓
+        </a>
         <VideoModal />
       </div>
 

@@ -19,8 +19,7 @@ export default function Hero() {
         <span className="text-[var(--color-foreground)]">.NET</span>,{" "}
         <span className="text-[var(--color-foreground)]">React</span>, and{" "}
         <span className="text-[var(--color-foreground)]">Azure</span>. 5+ years
-        delivering high-impact solutions — from microservices to async
-        event-driven pipelines.
+        delivering high-impact solutions.
       </p>
 
       <div className="flex flex-wrap gap-4">

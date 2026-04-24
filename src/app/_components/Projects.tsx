@@ -2,15 +2,6 @@ import FadeIn from "./FadeIn";
 
 const projects = [
   {
-    title: "Async Multi-Branch Provisioning Pipeline",
-    description:
-      "Re-engineered a synchronous provisioning workflow into a fully async, event-driven pipeline using Azure Service Bus. The original system blocked threads waiting for long-running branch setup operations, causing frequent timeouts and poor user experience at scale.",
-    outcome:
-      "Reduced execution time from 5+ minutes to seconds. Zero timeouts after rollout.",
-    stack: ["ASP.NET Core", "Azure Service Bus", "C#", "Event-Driven"],
-    type: "Backend · Dti Digital",
-  },
-  {
     title: "Social Impact Mobile App",
     description:
       "Built a volunteer mobile application to connect communities with local social initiatives in the Vale do Jequitinhonha region. The project also served as a hands-on programming introduction for 20 beginners, combining real product development with education.",

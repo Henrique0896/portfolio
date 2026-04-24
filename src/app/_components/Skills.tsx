@@ -2,24 +2,28 @@ import FadeIn from "./FadeIn";
 
 const categories = [
   {
-    label: "Backend",
-    skills: ["C#", ".NET", "ASP.NET Core", "Entity Framework", "REST APIs", "Microservices", "OAuth 2.0 / JWT"],
+    label: "Languages",
+    skills: ["C#", "TypeScript", "JavaScript", "Python", "SQL"],
   },
   {
-    label: "Frontend",
-    skills: ["React", "TypeScript", "Next.js", "Tailwind CSS", "HTML / CSS"],
+    label: "Frameworks",
+    skills: ["ASP.NET Core", "React", "React Native", "Vue.js", "Next.js", "Django", "Flask", "Entity Framework"],
   },
   {
     label: "Cloud & DevOps",
-    skills: ["Azure", "Azure Service Bus", "Docker", "CI/CD", "GitHub Actions"],
+    skills: ["Azure Service Bus", "Azure DevOps", "Application Insights", "Docker", "CI/CD"],
   },
   {
-    label: "Data",
-    skills: ["SQL Server", "MongoDB", "Query Optimization"],
+    label: "Databases",
+    skills: ["SQL Server", "Oracle", "MongoDB", "PostgreSQL"],
+  },
+  {
+    label: "Security",
+    skills: ["OAuth 2.0 / JWT", "OIDC", "LGPD"],
   },
   {
     label: "Practices",
-    skills: ["Tech Lead", "System Design", "Event-Driven Architecture", "Observability", "Mentoring", "Code Review"],
+    skills: ["Microservices", "Clean Architecture", "SOLID", "DDD", "TDD", "Event-Driven", "Tech Lead", "Mentoring"],
   },
 ];
 

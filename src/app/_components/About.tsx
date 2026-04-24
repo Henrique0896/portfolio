@@ -30,24 +30,24 @@ export default function About() {
       <div className="grid md:grid-cols-2 gap-12 mb-16">
         <FadeIn delay={100} className="flex flex-col gap-6 text-[var(--color-muted)] leading-relaxed">
           <p>
-            I&apos;m a software engineer from Belo Horizonte, Brazil, with a
-            genuine passion for building systems that scale. I started coding
-            during university, teaching Object-Oriented Programming as a
-            teaching assistant — and ever since, I&apos;ve been hooked on the
-            craft of turning complex problems into clean, reliable solutions.
+            Full Stack Software Engineer with 5+ years building systems that
+            solve real problems.
           </p>
           <p>
-            Most of my career was spent at Dti Digital, where I grew from
-            developer to tech lead on a platform serving 400,000+ students.
-            That experience shaped how I think about architecture: async
-            pipelines, microservices, observability, and the kind of decisions
-            that only reveal themselves at scale.
+            Specialized in architecting and implementing scalable, secure
+            solutions — from well-structured microservices to REST APIs that are
+            actually intuitive to use. Particularly focused on application
+            security (OAuth 2.0/JWT) and CI/CD pipelines that deploy smoothly.
           </p>
           <p>
-            Today I work at Stefanini consulting for Dell, focused on
-            React and ASP.NET Core. Outside of work, I care about mentoring,
-            clean APIs, and the occasional side project that teaches me
-            something new.
+            As a Tech Lead, I&apos;ve learned to balance technical decisions
+            with tight deadlines, mentor developers, and keep critical systems
+            running in fast-paced agile environments.
+          </p>
+          <p>
+            Comfortable moving between robust backend architecture and complex
+            frontends, always seeking the balance between clean code and
+            delivering value.
           </p>
         </FadeIn>
 

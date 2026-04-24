@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     "Azure",
     "microservices",
   ],
-  authors: [{ name: "Henrique Lima Barroso" }],
+  authors: [{ name: "Henrique de Lima Barroso" }],
   openGraph: {
     title: "Henrique Lima — Software Engineer",
     description:

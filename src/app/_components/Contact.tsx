@@ -75,9 +75,7 @@ export default function Contact() {
         ))}
       </div>
 
-      <p className="font-mono text-xs text-[var(--color-muted)] mt-16">
-        Belo Horizonte, Brazil · Available for remote work
-      </p>
+
     </section>
   );
 }

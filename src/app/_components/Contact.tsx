@@ -14,12 +14,6 @@ const links = [
     download: false,
   },
   {
-    label: "GitHub",
-    value: "github.com/Henrique0896",
-    href: "https://github.com/Henrique0896",
-    download: false,
-  },
-  {
     label: "WhatsApp",
     value: "+55 (38)98853-6753",
     href: "http://wa.me/5538988536753",

@@ -20,6 +20,12 @@ const links = [
     download: false,
   },
   {
+    label: "WhatsApp",
+    value: "+55 (38)98853-6753",
+    href: "http://wa.me/5538988536753",
+    download: false,
+  },
+  {
     label: "Curriculum",
     value: "CV_Henrique.pdf",
     href: "/CV_Henrique.pdf",

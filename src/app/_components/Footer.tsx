@@ -6,7 +6,7 @@ export default function Footer() {
           Henrique de Lima Barroso
         </p>
         <p className="font-mono text-xs text-[var(--color-muted)]">
-          Ireland · {new Date().getFullYear()}
+          Brazil · {new Date().getFullYear()}
         </p>
       </div>
     </footer>

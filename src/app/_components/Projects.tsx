@@ -2,13 +2,13 @@ import FadeIn from "./FadeIn";
 
 const projects = [
   {
-    title: "Social Impact Mobile App",
+    title: "FeiraKit",
     description:
-      "Built a volunteer mobile application to connect communities with local social initiatives in the Vale do Jequitinhonha region. The project also served as a hands-on programming introduction for 20 beginners, combining real product development with education.",
+      "Led end-to-end development of FeiraKit — a React Native mobile app backed by a Flask REST API and MongoDB connecting rural producers with local consumers in the Jequitinhonha Valley — from architecture to a production-ready handover.",
     outcome:
-      "Delivered working app for Fundo Social Vale do Jequitinhonha. Taught programming to 20 first-time developers.",
-    stack: ["React Native", "Flask", "MongoDB", "Python"],
-    type: "Mobile · Volunteer",
+      "Designed and taught a programming fundamentals curriculum to 30 participants from diverse backgrounds (students, career changers, and aspiring developers). Selected the top 8 to contribute to the application codebase. Delivered a functional, production-ready application for Fundo Social Vale do Jequitinhonha.",
+    stack: ["React Native", "Flask", "MongoDB"],
+    type: "Mobile · Volunteer · Tech Lead",
   },
 ];
 

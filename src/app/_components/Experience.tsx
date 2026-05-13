@@ -23,16 +23,15 @@ const experiences = [
   {
     company: "Dti Digital",
     context: "Consultant @ Anima Educação & SuperMix",
-    role: "Full Stack Developer",
+    role: "Software Development Engineer",
     period: "May 2021 — Feb 2025 · 3y 10m",
     bullets: [
       "Implemented event-driven microservices using ASP.NET Core and Azure Service Bus, enabling horizontal scalability during peak demand periods.",
-      "Participated in an OAuth 2.0 / JWT authentication redesign across multiple services, eliminating critical security vulnerabilities and achieving full LGPD compliance.",
-      "Contributed to building end-to-end CI/CD pipelines on Azure DevOps with automated unit, integration, and E2E testing gates, reducing release cycle time and post-deployment defect rate.",
+      "Acted as Security Champion for the squad — led security checklist reviews (CIA triad, LGPD compliance, SAST/DAST), drove remediation of vulnerabilities flagged by static analysis, and reinforced secure-by-default practices across code reviews and user story refinement.",
       "Stepped up as Tech Lead, owning code review processes and setting architectural standards that improved codebase consistency and reduced technical debt.",
-      "Mentored junior developers on clean architecture, SOLID principles, and testing best practices, significantly reducing average onboarding time.",
-      "Optimized high-traffic SQL Server and Oracle queries by fixing missing indexes and introducing in-memory caching, significantly reducing average API response latency.",
-      "Redesigned a synchronous provisioning flow into an async pipeline using Azure Service Bus, significantly improving response time and eliminating timeout errors.",
+      "Mentored junior developers on clean architecture, SOLID principles, and testing best practices.",
+      "Diagnosed and resolved recurring SQL Server performance issues on high-traffic endpoints, analyzing execution plans, adding missing indexes, and introducing caching where appropriate.",
+      "Contributed to redesigning a synchronous provisioning flow into an event-driven async pipeline (Azure Service Bus topic/subscriber pattern), drastically reducing timeout errors.",
     ],
   },
   {

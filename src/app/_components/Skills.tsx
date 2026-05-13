@@ -15,7 +15,7 @@ const categories = [
   },
   {
     label: "Databases",
-    skills: ["SQL Server", "Oracle", "MongoDB", "PostgreSQL"],
+    skills: ["SQL Server", "MongoDB", "PostgreSQL"],
   },
   {
     label: "Security",

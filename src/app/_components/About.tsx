@@ -37,7 +37,8 @@ export default function About() {
             Specialized in architecting and implementing scalable, secure
             solutions — from well-structured microservices to REST APIs that are
             actually intuitive to use. Particularly focused on application
-            security (OAuth 2.0/JWT) and CI/CD pipelines that deploy smoothly.
+            security and LGPD compliance, with hands-on experience as a Security
+            Champion driving secure-by-default practices.
           </p>
           <p>
             As a Tech Lead, I&apos;ve learned to balance technical decisions
